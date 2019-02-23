@@ -1,9 +1,8 @@
 {
-  "name": "react-redux-typescript-boilerplate",
+  "name": "promo-site",
   "version": "1.0.1",
   "private": true,
-  "description": "A frontend boilerplate with React, Redux and Typescript",
-  "homepage": "https://rokoroku.github.io/react-redux-typescript-boilerplate",
+  "description": "Promotional site for @shiny-eel",
   "keywords": [
     "react",
     "redux",
