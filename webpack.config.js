@@ -11,6 +11,8 @@ var outPath = path.join(__dirname, './build');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
+// var DirectoryNamedWebpackPlugin = require("directory-named-webpack-plugin");
+ 
 
 module.exports = {
   context: sourcePath,
@@ -107,6 +109,8 @@ module.exports = {
     runtimeChunk: true
   },
   plugins: [
+    // new DirectoryNamedWebpackPlugin(),
+
     new webpack.EnvironmentPlugin({
       NODE_ENV: 'development', // use 'development' unless process.env.NODE_ENV is defined
       DEBUG: false
