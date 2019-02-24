@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as style from './style.css';
-import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+import ScrollableAnchor, { configureAnchors, goToAnchor } from 'react-scrollable-anchor';
 
 export class App extends React.Component<any, any> {
   constructor(props: any) {
@@ -8,21 +8,29 @@ export class App extends React.Component<any, any> {
   }
 
   componentDidMount() {
-    configureAnchors();
+    configureAnchors({ scrollDuration: 200 });
   }
 
   render() {
     return (
       <div className={style.body}>
         <ScrollableAnchor id={'section1'}>
-          <div className={style.normal}>
+          <div className={style.section}>
             <h1>Lu Shien Lee</h1>
-            Hello
+            <div className={style.normal}>Hello</div>
           </div>
         </ScrollableAnchor>
         <ScrollableAnchor id={'section2'}>
-          <div className={style.normal}>
+          <div className={style.section}>
             <h1>Next Section</h1>
+            <div className={style.normal}>Hello</div>
+          </div>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'section3'}>
+          <div className={style.section}>
+            <h1>Next Section Again</h1>
+            <button onClick={(e) => goToAnchor('section1')}> CLICK ME </button>
+            <div className={style.normal}>Hello</div>
           </div>
         </ScrollableAnchor>
       </div>
