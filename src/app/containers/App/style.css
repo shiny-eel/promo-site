@@ -5,6 +5,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  /* width: 1000px; */
 }
 
 button {
@@ -23,13 +24,9 @@ button {
 
 body {
   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  /* line-height: 1.4em; */
   background: #f5f5f5;
   color: #4d4d4d;
-  /* min-width: 230px; */
-  /* max-width: 550px; */
-  /* padding-left: 10%; */
-  /* padding-right: 10%; */
+  height: 100vh;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
