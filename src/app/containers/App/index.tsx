@@ -1,7 +1,8 @@
 import * as React from 'react';
 import * as style from './style.css';
 import ScrollableAnchor, { configureAnchors, goToAnchor } from 'react-scrollable-anchor';
-
+import { Projects } from 'app/components';
+// import { Projects }
 export class App extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
@@ -23,8 +24,8 @@ export class App extends React.Component<any, any> {
         </ScrollableAnchor>
         <ScrollableAnchor id={'section2'}>
           <div className={[style.section, style.section2].join(' ')}>
-            <div className={style.normal}>Hello</div>
-            <h1>Next Section</h1>
+            <Projects />
+            {/* <h1>Next Section</h1> */}
           </div>
         </ScrollableAnchor>
         <ScrollableAnchor id={'section3'}>
