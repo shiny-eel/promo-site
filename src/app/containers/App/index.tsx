@@ -16,21 +16,22 @@ export class App extends React.Component<any, any> {
       <div className={style.body}>
         <ScrollableAnchor id={'section1'}>
           <div className={style.section}>
-            <h1>Lu Shien Lee</h1>
-            <div className={style.normal}>Hello</div>
+            <div className={[style.normal, style.pic].join(' ')}>
+              <h1>Lu Shien Lee</h1>
+            </div>
           </div>
         </ScrollableAnchor>
         <ScrollableAnchor id={'section2'}>
-          <div className={style.section}>
-            <h1>Next Section</h1>
+          <div className={[style.section, style.section2].join(' ')}>
             <div className={style.normal}>Hello</div>
+            <h1>Next Section</h1>
           </div>
         </ScrollableAnchor>
         <ScrollableAnchor id={'section3'}>
           <div className={style.section}>
-            <h1>Next Section Again</h1>
             <button onClick={(e) => goToAnchor('section1')}> CLICK ME </button>
             <div className={style.normal}>Hello</div>
+            <h1>Next Section Again</h1>
           </div>
         </ScrollableAnchor>
       </div>
