@@ -1,25 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
-.project {
-  margin: 3% 5% 3% 5%;
-}
-
-.project h1 {
-  position: relative;
-  flex: 1;
-  margin: 0px 0px 0px 0px;
-  padding-bottom: 2vh;
-  font-size: 100px;
-  font-weight: 100;
-  text-align: center;
-}
-
-.projectContent {
-  display: flex;
-  align-items: flex-start;
-}
-
-.projectContent .text {
+.text {
   flex-direction: column;
   position: relative;
   flex: 3;

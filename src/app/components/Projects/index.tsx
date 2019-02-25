@@ -11,13 +11,15 @@ export class Projects extends React.Component<any, any> {
     super(props);
   }
 
-  // Desktop = (props: any) => {
-  //   <Responsive {...props} orientation="portrait" />;
-  // };
-
-  // Handheld = (props: any) => {
-  //   <Responsive {...props} orientation="landscape" />;
-  // };
+  renderItems = (): any => {
+    return (
+      <div>
+        <MxSlate />
+        <MessengerLaunch />
+        <GenreNN />
+      </div>
+    );
+  };
 
   renderDesktop = (): any => {
     return (
@@ -27,11 +29,7 @@ export class Projects extends React.Component<any, any> {
             <h1>Projects</h1>
           </StickyBox>
         </div>
-        <div className={style.projectsContent}>
-          <MxSlate />
-          <MessengerLaunch />
-          <GenreNN />
-        </div>
+        <div className={style.projectsContent}>{this.renderItems()}</div>
       </div>
     );
   };
@@ -40,19 +38,14 @@ export class Projects extends React.Component<any, any> {
     return (
       <div className={style.row}>
         <div className={style.projectsContent}>
-          {/* <StickyBox> */}
-          {/* </StickyBox> */}
-          <MxSlate />
-          <MessengerLaunch />
-          <GenreNN />
           <div className={style.projectsHeader}>
             <h1>Projects</h1>
           </div>
+          {this.renderItems()}
         </div>
       </div>
     );
   };
-  // <MediaQuery query="(orientation: landscape)">
 
   render() {
     return (
