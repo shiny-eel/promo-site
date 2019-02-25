@@ -1,0 +1,41 @@
+.splashSection h1 {
+  color: white;
+  text-align: left;
+
+  font-size: 20vh;
+  width: 40vw;
+  font-weight: 00;
+  position: absolute;
+  bottom: 10px;
+  margin: 10px 10px 30px 40px;
+}
+
+.splashSection {
+  margin: 0px 0 0px 0;
+  height: 100vh;
+
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 900px) {
+  .pic {
+    background-image: url(../../../assets/images/baby-lsl.png);
+  }
+}
+
+@media only screen and (max-width: 900px), (orientation: portrait) {
+  .pic {
+    background-image: url(../../../assets/images/baby-lsl-m.png);
+  }
+  .splashSection h1 {
+    bottom: unset;
+    top: 10px;
+    font-size: 12rem;
+    width: 90vw;
+  }
+}
+
+.pic {
+  background-size: cover;
+}

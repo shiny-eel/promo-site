@@ -9,7 +9,7 @@
 }
 
 .projectsHeader {
-  background: rgba(36, 95, 2, 1);
+  background: rgb(89, 166, 218);
   flex: 1;
   min-width: 100px;
   height: 100%;
@@ -27,7 +27,7 @@
 .projectsContent {
   flex: 3.75;
   height: 100%;
-  background-color: rgb(60, 109, 4);
+  background-color: rgb(182, 209, 231);
 }
 
 @media only screen and (max-width: 900px), (orientation: portrait) {
@@ -41,7 +41,6 @@
     top: 0;
     width: 100%;
     height: unset;
-    background: rgba(36, 95, 2, 1);
     z-index: 1;
   }
   .projectsHeader h1 {

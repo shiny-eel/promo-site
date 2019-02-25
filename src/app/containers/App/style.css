@@ -9,7 +9,7 @@ body {
 
 body {
   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(61, 61, 61);
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
@@ -17,59 +17,29 @@ body {
   font-weight: 300;
 }
 
-h1 {
-  color: rgba(255, 255, 255, 1);
-  font-size: 100px;
-  line-height: 90%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(61, 61, 61);
+  line-height: 100%;
   font-weight: 200;
-  text-align: left;
+  text-align: center;
+  margin: 0rem 0rem;
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
   -ms-text-rendering: optimizeLegibility;
   text-rendering: optimizeLegibility;
 }
 
+h1 {
+  font-size: 100px;
+}
 .section {
   position: relative;
-  background-color: rgb(226, 226, 226);
-}
-
-.splashSection h1 {
-  font-size: 20vh;
-  width: 40vw;
-  font-weight: 00;
-  position: absolute;
-  bottom: 10px;
-  margin: 10px 10px 30px 40px;
-}
-
-.splashSection {
-  margin: 0px 0 0px 0;
-  height: 100vh;
-  position: relative;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
-}
-
-@media only screen and (min-width: 900px) {
-  .pic {
-    background-image: url(../../../assets/images/baby-lsl.png);
-  }
-}
-
-@media only screen and (max-width: 900px), (orientation: portrait) {
-  .pic {
-    background-image: url(../../../assets/images/baby-lsl-m.png);
-  }
-  .splashSection h1 {
-    bottom: unset;
-    top: 10px;
-    font-size: 12rem;
-    width: 90vw;
-  }
-}
-
-.pic {
-  background-size: cover;
+  background-color: white;
 }
 
 .normal input::-webkit-input-placeholder {
