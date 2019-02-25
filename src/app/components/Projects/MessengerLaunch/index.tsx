@@ -16,7 +16,11 @@ export class MessengerLaunch extends React.Component<any, any> {
           <img src={logo} style={{ width: '90%' }} alt="Extension gif" />
         </div>
         <div className={style.text}>
-          <h2>A Chrome extension for quickly getting to Facebook Messenger conversations.</h2>
+          <p>
+            {
+              'A Chrome extension for quickly getting to Facebook Messenger conversations. We all about that w o r k f l o w here.'
+            }
+          </p>
           <h2>See the code:</h2>
           <a href="https://github.com/shiny-eel/messenger-launch" target="_blank">
             <h2>Github Repository</h2>

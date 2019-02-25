@@ -7,20 +7,6 @@ body {
   padding: 0;
 }
 
-button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: none;
-  font-size: 100%;
-  vertical-align: baseline;
-  font-family: inherit;
-  font-weight: inherit;
-  color: inherit;
-  appearance: none;
-  font-smoothing: antialiased;
-}
-
 body {
   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: rgba(255, 255, 255, 1);
@@ -43,11 +29,6 @@ h1 {
   text-rendering: optimizeLegibility;
 }
 
-button,
-input[type='checkbox'] {
-  outline: none;
-}
-
 .section {
   position: relative;
   background-color: rgb(226, 226, 226);
@@ -56,7 +37,7 @@ input[type='checkbox'] {
 .splashSection h1 {
   font-size: 20vh;
   width: 40vw;
-  font-weight: 300;
+  font-weight: 00;
   position: absolute;
   bottom: 10px;
   margin: 10px 10px 30px 40px;
@@ -79,12 +60,13 @@ input[type='checkbox'] {
   .pic {
     background-image: url(../../../assets/images/baby-lsl-m.png);
   }
-}
-/* @media (orientation: portrait) {
-  .pic {
-    background-image: url(../../../assets/images/baby-lsl-m.png);
+  .splashSection h1 {
+    bottom: unset;
+    top: 10px;
+    font-size: 12rem;
+    width: 90vw;
   }
-} */
+}
 
 .pic {
   background-size: cover;
@@ -106,4 +88,23 @@ input[type='checkbox'] {
   font-style: italic;
   font-weight: 300;
   color: #e6e6e6;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  appearance: none;
+  font-smoothing: antialiased;
+}
+
+button,
+input[type='checkbox'] {
+  outline: none;
 }

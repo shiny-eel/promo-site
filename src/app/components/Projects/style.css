@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
 .row {
+  /* height: 3000px; */
+  /* height: max-content; */
   height: 3000px;
   display: flex;
   align-items: flex-start;
@@ -31,6 +33,7 @@
 @media only screen and (max-width: 900px), (orientation: portrait) {
   .row {
     flex-direction: column;
+    height: fit-content;
   }
   .projectsHeader {
     position: -webkit-sticky;
@@ -42,6 +45,8 @@
     z-index: 1;
   }
   .projectsHeader h1 {
+    font-size: 3rem;
+    font-weight: 400;
     width: 100%;
     padding: 3vw 0vw;
   }
