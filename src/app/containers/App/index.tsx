@@ -20,7 +20,9 @@ export class App extends React.Component<any, any> {
   render() {
     // TODO: Add linear gradient shade to title
     return (
-      <div className={style.body}>
+      <div className={style.container}>
+        <div className={style.headerImage} />
+        <div className={style.filler} />
         <Section id={'splash'}>
           <Splash />
         </Section>

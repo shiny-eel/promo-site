@@ -37,6 +37,11 @@ h6 {
 h1 {
   font-size: 100px;
 }
+
+.container {
+  position: absolute;
+}
+
 .section {
   position: relative;
   background-color: white;

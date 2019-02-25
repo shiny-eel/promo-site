@@ -47,6 +47,8 @@
 .pic {
   align-self: center;
   flex: 2;
+  /* Aligns pic */
+  text-align: center;
 }
 
 .pic img {

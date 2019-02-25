@@ -13,9 +13,16 @@
 .splashSection {
   margin: 0px 0 0px 0;
   height: 100vh;
-
+  opacity: 1;
   position: relative;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+.pic {
+  background-size: cover;
+  /* These three keep the splash image 'sticky' */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 @media only screen and (min-width: 900px) {
@@ -34,8 +41,4 @@
     font-size: 12rem;
     width: 90vw;
   }
-}
-
-.pic {
-  background-size: cover;
 }
