@@ -59,11 +59,13 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
+    "@types/react-responsive": "^3.0.3",
     "classnames": "^2.2.6",
     "directory-named-webpack-plugin": "^4.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-redux": "^6.0.0",
+    "react-responsive": "^6.1.1",
     "react-router": "^4.3.1",
     "react-scrollable-anchor": "^0.6.1",
     "react-sticky-box": "^0.8.0",

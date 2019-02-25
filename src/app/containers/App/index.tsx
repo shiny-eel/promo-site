@@ -3,6 +3,10 @@ import * as style from './style.css';
 import ScrollableAnchor, { configureAnchors, goToAnchor } from 'react-scrollable-anchor';
 import { Projects } from 'app/components';
 // import { Projects }
+
+// const desktopImage = require('../../../assets/images/baby-lsl.png');
+// const mobileImage = require('../../../assets/images/baby-lsl-m.png');
+
 export class App extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
@@ -13,11 +17,16 @@ export class App extends React.Component<any, any> {
   }
 
   render() {
+    // const imageUrl = window.innerWidth >= 650 ? desktopImage : mobileImage;
+
     return (
       <div className={style.body}>
         <ScrollableAnchor id={'section1'}>
           <div className={style.section}>
-            <div className={[style.normal, style.pic].join(' ')}>
+            <div
+              className={[style.splashSection, style.pic].join(' ')}
+              // style={{ backgroundImage: `url(${imageUrl})` }}
+            >
               <h1>Lu Shien Lee</h1>
             </div>
           </div>
