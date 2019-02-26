@@ -3,8 +3,9 @@ import * as style from './style.css';
 import { SocialIcon } from 'react-social-icons';
 
 const iconStyle: any = {
-  width: '8rem',
-  height: '8rem'
+  width: '6rem',
+  height: '6rem',
+  margin: '1rem 1rem'
 };
 
 export class Contact extends React.Component<any, any> {
@@ -21,7 +22,7 @@ export class Contact extends React.Component<any, any> {
           <hr />
         </div>
         <div className={style.spread}>
-          <div className={style.about}>
+          <div className={style.links}>
             <SocialIcon url="https://github.com/shiny-eel" style={iconStyle} target="_blank" />
             <SocialIcon url="mailto:lee.lushien@gmail.com" style={iconStyle} target="_blank" />
             <SocialIcon
@@ -45,6 +46,7 @@ export class Contact extends React.Component<any, any> {
             </a>
           </div>
         </div>
+        <div className={style.spacer} />
       </div>
     );
   }

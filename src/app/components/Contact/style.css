@@ -58,8 +58,10 @@
   }
 }
 
-.about {
+.links {
   flex: 3;
+  justify-content: center;
+  text-align: center;
 }
 
 .pic {
@@ -74,10 +76,12 @@
   width: 17vh;
   height: auto;
   overflow: hidden;
-  /* border-width: 100px;
-  border-color: red; */
 }
 
 .details {
   flex: 3;
+}
+
+.spacer {
+  height: 20vw;
 }
