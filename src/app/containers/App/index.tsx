@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as style from './style.css';
-import { configureAnchors, goToAnchor } from 'react-scrollable-anchor';
-import { Projects, Profile, Splash } from 'app/components';
+import { configureAnchors } from 'react-scrollable-anchor';
+import { Projects, Profile, Splash, Contact } from 'app/components';
 import { Section } from 'app/shared/Section';
 // import { Projects }
 
@@ -17,6 +17,9 @@ export class App extends React.Component<any, any> {
     configureAnchors({ scrollDuration: 200 });
   }
 
+  //  <h1>Next Section Again</h1>
+  // <button onClick={(e) => goToAnchor('splash')}> CLICK ME </button>
+  // <div className={style.normal}>Hello</div>
   render() {
     // TODO: Add linear gradient shade to title
     return (
@@ -33,11 +36,7 @@ export class App extends React.Component<any, any> {
           <Projects />
         </Section>
         <Section id={'other'}>
-          <div className={style.section}>
-            <button onClick={(e) => goToAnchor('splash')}> CLICK ME </button>
-            <div className={style.normal}>Hello</div>
-            <h1>Next Section Again</h1>
-          </div>
+          <Contact />
         </Section>
       </div>
     );
