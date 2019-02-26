@@ -1,6 +1,5 @@
 .profile {
   display: flex;
-
   flex-direction: column;
   height: fit-content;
   align-items: center;
@@ -17,29 +16,48 @@
   z-index: 1;
 }
 .profileHeader h1 {
-  font-size: 3rem;
   margin: 0rem 0rem;
-  font-weight: 300;
   width: 100%;
   text-align: center;
-  padding: 1vw 0vw;
+  padding: 1vw 0vw 0vw 0vw;
+}
+
+.profileHeader h3 {
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 .spread {
   flex-direction: row;
   align-items: top;
   display: flex;
+  padding: 1vw;
+  width: 50%;
+}
+
+.spread h2 {
+  padding: 1vw;
+  font-size: 2.5rem;
+}
+
+.spread p {
 }
 @media only screen and (min-width: 900px) {
   .spread {
-    width: 50%;
+    /* width: 50%; */
+  }
+
+  .spread h2 {
   }
 }
 @media only screen and (max-width: 900px), (orientation: portrait) {
   .spread {
     flex-direction: column;
+    width: 90%;
+    /* width: 100%; */
   }
 }
+
 .about {
   flex: 3;
 }

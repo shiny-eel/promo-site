@@ -15,7 +15,9 @@ export class Projects extends React.Component<any, any> {
     return (
       <div>
         <MxSlate />
+        <hr />
         <MessengerLaunch />
+        <hr />
         <GenreNN />
       </div>
     );

@@ -18,7 +18,6 @@
 .projectsHeader h1 {
   /* position: sticky; */
   width: fit-content;
-  font-size: 4vw;
   text-align: center;
   padding: 1vw 2vw 2vw 2vw;
   margin: unset;
@@ -44,7 +43,6 @@
     z-index: 1;
   }
   .projectsHeader h1 {
-    font-size: 3rem;
     font-weight: 400;
     width: 100%;
     padding: 3vw 0vw;

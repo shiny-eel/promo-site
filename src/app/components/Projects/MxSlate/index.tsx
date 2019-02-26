@@ -21,12 +21,12 @@ export class MxSlate extends React.Component<any, any> {
             future releases. A React Native application. Made during an internship with Vista
             Entertainment Solutions in 2019.
           </p>
-          <h2>Get it here for free:</h2>
+          <h3>Get it here for free:</h3>
           <a href="https://itunes.apple.com/app/id1451114868" target="_blank">
-            <h2>Apple App Store</h2>
+            <h3>Apple App Store</h3>
           </a>
           <a href="https://play.google.com/store/apps/details?id=com.mxfilmapp" target="_blank">
-            <h2>Android Play Store</h2>
+            <h3>Android Play Store</h3>
           </a>
         </div>
       </Project>

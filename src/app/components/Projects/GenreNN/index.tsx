@@ -20,9 +20,9 @@ export class GenreNN extends React.Component<any, any> {
             Training an Artificial Neural Network to classify songs into genres. A research project
             for a post-graduate computer science course.
           </p>
-          <h2>See the code:</h2>
+          <h3>See the code:</h3>
           <a href="https://github.com/shiny-eel/genre-tdnn" target="_blank">
-            <h2>Github Repository</h2>
+            <h3>Github Repository</h3>
           </a>
         </div>
       </Project>

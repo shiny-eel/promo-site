@@ -21,16 +21,16 @@ export class MessengerLaunch extends React.Component<any, any> {
               'A Chrome extension for quickly getting to Facebook Messenger conversations. We all about that w o r k f l o w here.'
             }
           </p>
-          <h2>See the code:</h2>
+          <h3>See the code:</h3>
           <a href="https://github.com/shiny-eel/messenger-launch" target="_blank">
-            <h2>Github Repository</h2>
+            <h3>Github Repository</h3>
           </a>
-          <h2>Get the extension:</h2>
+          <h3>Get the extension:</h3>
           <a
             href="https://chrome.google.com/webstore/detail/mail-messenger-app-intell/iajnhopgafljpgpnhcdjkgmpkkhkphgk/related?hl=en"
             target="_blank"
           >
-            <h2>Chrome Store</h2>
+            <h3>Chrome Store</h3>
           </a>
         </div>
       </Project>

@@ -14,6 +14,7 @@ export class Profile extends React.Component<any, any> {
         <div className={style.profileHeader}>
           <h1>Profile</h1>
           <h3>I'm a young software engineer</h3>
+          <hr />
         </div>
         <div className={style.spread}>
           <div className={style.about}>
