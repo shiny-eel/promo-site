@@ -1,4 +1,4 @@
-.profile {
+.contactContainer {
   display: flex;
   flex-direction: column;
   height: fit-content;
@@ -6,7 +6,7 @@
   align-content: center;
   justify-content: center;
 }
-.profileHeader {
+.contactHeader {
   /* position: -webkit-sticky; */
   /* position: sticky; */
   top: 0;
@@ -15,19 +15,18 @@
   background: white;
   z-index: 1;
 }
-.profileHeader h1 {
-  margin: 0rem 0rem;
+.contactHeader h1 {
   width: 100%;
   text-align: center;
-  padding: 1vw 0vw 0vw 0vw;
+  /* padding: 1vw 0vw 0vw 0vw; */
 }
 
-.profileHeader h3 {
+.contactHeader h3 {
   font-size: 1.5rem;
   font-style: italic;
 }
 
-.spread {
+.contactSpread {
   flex-direction: row;
   align-items: top;
   display: flex;
@@ -35,23 +34,18 @@
   width: 50%;
 }
 
-.spread h2 {
+.contactSpread h2 {
   padding: 1vw;
   font-size: 2.5rem;
 }
 
-.spread p {
-}
+/* 
 @media only screen and (min-width: 900px) {
-  .spread {
-    /* width: 50%; */
-  }
 
-  .spread h2 {
-  }
 }
+ */
 @media only screen and (max-width: 900px), (orientation: portrait) {
-  .spread {
+  .contactHeader {
     flex-direction: column;
     width: 90%;
     /* width: 100%; */
@@ -78,7 +72,7 @@
   overflow: hidden;
 }
 
-.details {
+.moreInfo {
   flex: 3;
 }
 

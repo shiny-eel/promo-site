@@ -15,13 +15,13 @@ export class Contact extends React.Component<any, any> {
 
   render() {
     return (
-      <div className={style.profile}>
-        <div className={style.profileHeader}>
+      <div className={style.contactContainer}>
+        <div className={style.contactHeader}>
           <h1>Contact</h1>
           <h3>Reach out to get more info, talk business, or just to chat.</h3>
           <hr />
         </div>
-        <div className={style.spread}>
+        <div className={style.contactSpread}>
           <div className={style.links}>
             <SocialIcon url="https://github.com/shiny-eel" style={iconStyle} target="_blank" />
             <SocialIcon url="mailto:lee.lushien@gmail.com" style={iconStyle} target="_blank" />
@@ -36,7 +36,7 @@ export class Contact extends React.Component<any, any> {
               target="_blank"
             />
           </div>
-          <div className={style.details}>
+          <div className={style.moreInfo}>
             <h2>More</h2>
             <a
               href="https://s3-ap-southeast-2.amazonaws.com/lushien-resources/CV+2019+FEBRUARY.pdf"

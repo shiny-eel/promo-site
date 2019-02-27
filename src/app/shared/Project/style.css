@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
 .project {
-  margin: 3% 5% 3% 5%;
+  /* margin: 3% 5% 3% 5%; */
+  padding: 1% 5% 1% 5%;
 }
 
 .project h1 {
   position: relative;
   flex: 1;
-  margin: 0px 0px 0px 0px;
   padding-bottom: 2vh;
   text-align: center;
 }

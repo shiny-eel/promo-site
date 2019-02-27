@@ -26,10 +26,14 @@ export class Projects extends React.Component<any, any> {
   renderDesktop = (): any => {
     return (
       <div className={style.row}>
-        <div className={style.projectsHeader}>
-          <StickyBox>
-            <h1>Projects</h1>
-          </StickyBox>
+        <div className={style.sidebarContainer}>
+          <div className={style.projectsHeader}>
+            <StickyBox>
+              <h1>Projects</h1>
+            </StickyBox>
+            {/* <div className={style.projectsHeader}>
+            </div> */}
+          </div>
         </div>
         <div className={style.projectsContent}>{this.renderItems()}</div>
       </div>

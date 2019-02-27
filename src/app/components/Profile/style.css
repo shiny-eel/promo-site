@@ -16,10 +16,9 @@
   z-index: 1;
 }
 .profileHeader h1 {
-  margin: 0rem 0rem;
   width: 100%;
   text-align: center;
-  padding: 1vw 0vw 0vw 0vw;
+  /* padding: 1vw 0vw 0vw 0vw; */
 }
 
 .profileHeader h3 {

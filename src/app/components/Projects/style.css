@@ -2,25 +2,51 @@
 
 .row {
   /* height: 3000px; */
-  /* height: max-content; */
-  height: 3000px;
+  width: 100%;
+  display: -moz-box;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
-  align-items: flex-start;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.sidebarContainer {
+  position: relative;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1;
+  background: rgb(89, 166, 218);
+  /* width: inherit; */
 }
 
 .projectsHeader {
-  background: rgb(89, 166, 218);
+  background-color: rgb(89, 166, 218);
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   min-width: 100px;
-  height: 100%;
 }
 
 .projectsHeader h1 {
   /* position: sticky; */
   width: fit-content;
   text-align: center;
-  padding: 1vw 2vw 2vw 2vw;
-  margin: unset;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  /* padding: 1vw 2vw 2vw 2vw; */
+  /* margin: unset; */
 }
 
 .projectsContent {
