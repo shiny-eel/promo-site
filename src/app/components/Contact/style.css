@@ -5,6 +5,8 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 .contactHeader {
   /* position: -webkit-sticky; */
@@ -49,6 +51,9 @@
     flex-direction: column;
     width: 90%;
     /* width: 100%; */
+  }
+  .contactSpread {
+    width: 80%;
   }
 }
 

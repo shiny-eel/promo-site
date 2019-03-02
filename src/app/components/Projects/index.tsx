@@ -19,6 +19,7 @@ export class Projects extends React.Component<any, any> {
         <MessengerLaunch />
         <hr />
         <GenreNN />
+        <hr />
       </div>
     );
   };

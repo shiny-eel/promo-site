@@ -1,4 +1,34 @@
-.splashSection h1 {
+.heroContainer {
+  margin: 0px 0 0px 0;
+  position: relative;
+  width: 100%;
+  /* opacity: 1; */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.heroImage {
+  /* width: 100vw; */
+  /* height: 100%; */
+  height: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heroChildren {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.heroChildren h1 {
   color: white;
   text-align: left;
 
@@ -10,32 +40,17 @@
   margin: 10px 10px 30px 40px;
 }
 
-.splashSection {
-  margin: 0px 0 0px 0;
-  height: 100vh;
-  opacity: 1;
-  position: relative;
-  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1); */
-}
-.pic {
-  background-size: cover;
-  /* These three keep the splash image 'sticky' */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 @media only screen and (min-width: 900px) {
-  .pic {
+  .heroImage {
     background-image: url(../../../assets/images/baby-lsl.png);
   }
 }
 
 @media only screen and (max-width: 900px), (orientation: portrait) {
-  .pic {
+  .heroImage {
     background-image: url(../../../assets/images/baby-lsl-m.png);
   }
-  .splashSection h1 {
+  .heroChildren h1 {
     bottom: unset;
     top: 10px;
     font-size: 12rem;
