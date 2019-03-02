@@ -28,7 +28,6 @@
   display: flex;
   flex: 1;
   background: rgb(89, 166, 218);
-  padding: 1vh 0%;
   /* width: inherit; */
 }
 
@@ -44,6 +43,7 @@
   /* position: sticky; */
   width: fit-content;
   text-align: center;
+  padding-top: 1vh;
   padding-left: 2vw;
   padding-right: 2vw;
   /* padding: 1vw 2vw 2vw 2vw; */
@@ -53,6 +53,18 @@
 .stickyBox {
   display: flex;
   justify-content: center;
+  height: 100vh;
+}
+
+.stickyGithub {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  flex-direction: column;
+
+  text-align: center;
 }
 
 .projectsContent {

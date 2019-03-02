@@ -5,6 +5,13 @@ import { MxSlate } from './MxSlate';
 import { MessengerLaunch } from './MessengerLaunch';
 import { GenreNN } from './GenreNN';
 import MediaQuery from 'react-responsive';
+import { SocialIcon } from 'react-social-icons';
+
+const iconStyle: any = {
+  width: '6rem',
+  height: '6rem',
+  margin: '1rem 1rem'
+};
 
 export class Projects extends React.Component<any, any> {
   constructor(props: any) {
@@ -32,6 +39,16 @@ export class Projects extends React.Component<any, any> {
             <StickyBox>
               <div className={style.stickyBox}>
                 <h1>Projects</h1>
+                <div className={style.stickyGithub}>
+                  <h3>View all my public repositories</h3>
+                  <div>
+                    <SocialIcon
+                      url="https://github.com/shiny-eel"
+                      style={iconStyle}
+                      target="_blank"
+                    />
+                  </div>
+                </div>
               </div>
             </StickyBox>
             {/* <div className={style.projectsHeader}>
