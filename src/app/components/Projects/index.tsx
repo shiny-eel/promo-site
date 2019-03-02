@@ -30,7 +30,9 @@ export class Projects extends React.Component<any, any> {
         <div className={style.sidebarContainer}>
           <div className={style.projectsHeader}>
             <StickyBox>
-              <h1>Projects</h1>
+              <div className={style.stickyBox}>
+                <h1>Projects</h1>
+              </div>
             </StickyBox>
             {/* <div className={style.projectsHeader}>
             </div> */}

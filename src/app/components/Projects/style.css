@@ -28,6 +28,7 @@
   display: flex;
   flex: 1;
   background: rgb(89, 166, 218);
+  padding: 1vh 0%;
   /* width: inherit; */
 }
 
@@ -47,6 +48,11 @@
   padding-right: 2vw;
   /* padding: 1vw 2vw 2vw 2vw; */
   /* margin: unset; */
+}
+
+.stickyBox {
+  display: flex;
+  justify-content: center;
 }
 
 .projectsContent {
