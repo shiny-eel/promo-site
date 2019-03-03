@@ -37,8 +37,12 @@ export class Profile extends React.Component<any, any> {
           </div>
           <div className={style.details}>
             <h2>Details</h2>
-            <p>Engineering + Economics conjoint at the University of Auckland</p>
-            <p>Living in New Zealand (but keen to work anywhere)</p>
+            <p>University: Engineering + Economics conjoint at the University of Auckland</p>
+            <p>
+              High School: Senior prefect, sports captain, and music leader at Auckland Grammar
+              School
+            </p>
+            <p>Location: Living in New Zealand (but keen to work anywhere)</p>
           </div>
         </div>
       </div>

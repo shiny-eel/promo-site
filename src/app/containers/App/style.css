@@ -84,6 +84,12 @@ h3 {
   background-color: white;
 }
 
+.navButton {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
+
 button {
   margin: 0;
   padding: 0;

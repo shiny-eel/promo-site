@@ -12,7 +12,11 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 // var DirectoryNamedWebpackPlugin = require("directory-named-webpack-plugin");
- 
+
+// using CommonJS modules
+var Router = require('react-router').Router;
+var Route = require('react-router').Route;
+var Switch = require('react-router').Switch;
 
 module.exports = {
   context: sourcePath,
