@@ -86,11 +86,40 @@ h3 {
 
 .navButton {
   position: fixed;
-  bottom: 0;
-  right: 10px;
+  bottom: 1vh;
+  right: 1vh;
+  width: 10vh;
+  height: 10vh;
+  /* display: flex; */
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(5, 100, 25, 0.486);
+  z-index: 999;
+  border-radius: 100%;
 }
 
-button {
+button:focus {
+  outline: 0;
+}
+
+.navButton button {
+  flex: 1;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+}
+
+.navButton img {
+  flex: 1;
+  object-fit: contain;
+  height: 55%;
+  width: 55%;
+  padding: 0;
+}
+
+/* button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -107,4 +136,4 @@ button {
 button,
 input[type='checkbox'] {
   outline: none;
-}
+} */

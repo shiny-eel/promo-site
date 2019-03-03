@@ -7,6 +7,9 @@ import { Section } from 'app/shared/Section';
 
 // const desktopImage = require('../../../assets/images/baby-lsl.png');
 // const mobileImage = require('../../../assets/images/baby-lsl-m.png');
+
+const downIcon = require('../../../assets/images/dropdown-arrow.png');
+
 export enum Sections {
   Splash = 'splash',
   About = 'about',
@@ -25,15 +28,16 @@ export class App extends React.Component<any, any> {
   }
 
   goToNext = (): void => {
-    goToAnchor(sections[sections.indexOf(this.props.location.hash.substring(1)) + 1]);
+    goToAnchor(
+      sections[sections.indexOf(this.props.location.hash.substring(1) || Sections.Splash) + 1]
+    );
   };
 
   //  <h1>Next Section Again</h1>
   // <button onClick={(e) => goToAnchor('splash')}> CLICK ME </button>
   // <div className={style.normal}>Hello</div>
   render() {
-    // TODO: Add linear gradient shade to title
-    console.log(this.props.location);
+    // TODO: Add linear gradient shade to title?
     return (
       <div className={style.container}>
         <Section id={Sections.Splash}>
@@ -49,7 +53,9 @@ export class App extends React.Component<any, any> {
           <Contact />
         </Section>
         <div className={style.navButton}>
-          <button onClick={(e) => this.goToNext()}> CLICK ME </button>
+          <button onClick={(e) => this.goToNext()}>
+            <img src={downIcon} alt="scroll down" />
+          </button>
         </div>
       </div>
     );
