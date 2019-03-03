@@ -1,14 +1,12 @@
 {
-  "name": "promo-site",
-  "version": "1.0.1",
+  "name": "lushien-promo",
+  "version": "1.0.2",
   "private": true,
   "description": "Promotional site for @shiny-eel",
   "keywords": [
     "react",
-    "redux",
     "typescript",
-    "boilerplate",
-    "todomvc"
+    "software"
   ],
   "main": "index.js",
   "scripts": {

@@ -2,6 +2,8 @@ import * as React from 'react';
 import * as style from './style.css';
 import { SocialIcon } from 'react-social-icons';
 
+const mobaIcon = require('../../../assets/images/alistar-build.jpg');
+
 const iconStyle: any = {
   width: '6rem',
   height: '6rem',
@@ -45,14 +47,15 @@ export class Contact extends React.Component<any, any> {
               <h3>Download my CV</h3>
             </a>
           </div>
-          <div className={style.easterEgg}>
-            <a
-              href="https://www.mobafire.com/league-of-legends/build/support-alistar-feeding-your-team-with-milk-296695"
-              target="_blank"
-            >
-              <p>Read my Season 5 Alistar Support guide</p>
-            </a>
-          </div>
+        </div>
+        <div className={style.easterEgg}>
+          <a
+            href="https://www.mobafire.com/league-of-legends/build/support-alistar-feeding-your-team-with-milk-296695"
+            target="_blank"
+          >
+            <p>Read my Season 5 Alistar Support guide</p>
+            <img src={mobaIcon} />
+          </a>
         </div>
         {/* <div className={style.spacer} /> */}
       </div>
