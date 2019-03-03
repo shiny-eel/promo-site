@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as style from './style.css';
 // import { Parallax } from 'react-scroll-parallax';
 
-// const backgroundImage = '../../../assets/images/baby-lsl.png';
+// const backgroundImage = '../../../assets/images/baby-lsl.jpg';
 
 export class Splash extends React.Component<any, any> {
   constructor(props: any) {

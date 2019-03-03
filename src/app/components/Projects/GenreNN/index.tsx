@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as style from '../project.css';
 import { Project } from 'app/shared/Project';
 
-const logo = require('../../../../assets/images/genre-chart.png');
+const logo = require('../../../../assets/images/genre-chart.jpg');
 
 export class GenreNN extends React.Component<any, any> {
   constructor(props: any) {

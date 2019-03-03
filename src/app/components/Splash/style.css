@@ -42,13 +42,13 @@
 
 @media only screen and (min-width: 900px) {
   .heroImage {
-    background-image: url(../../../assets/images/baby-lsl.png);
+    background-image: url(../../../assets/images/baby-lsl.jpg);
   }
 }
 
 @media only screen and (max-width: 900px), (orientation: portrait) {
   .heroImage {
-    background-image: url(../../../assets/images/baby-lsl-m.png);
+    background-image: url(../../../assets/images/baby-lsl-m.jpg);
   }
   .heroChildren h1 {
     bottom: unset;

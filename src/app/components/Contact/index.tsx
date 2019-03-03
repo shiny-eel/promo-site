@@ -45,8 +45,16 @@ export class Contact extends React.Component<any, any> {
               <h3>Download my CV</h3>
             </a>
           </div>
+          <div className={style.easterEgg}>
+            <a
+              href="https://www.mobafire.com/league-of-legends/build/support-alistar-feeding-your-team-with-milk-296695"
+              target="_blank"
+            >
+              <p>Read my Season 5 Alistar Support guide</p>
+            </a>
+          </div>
         </div>
-        <div className={style.spacer} />
+        {/* <div className={style.spacer} /> */}
       </div>
     );
   }

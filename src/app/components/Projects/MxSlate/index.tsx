@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as style from '../project.css';
 import { Project } from 'app/shared/Project';
 
-const logo = require('../../../../assets/images/mx-list.png');
+const logo = require('../../../../assets/images/mx-list.jpg');
 
 export class MxSlate extends React.Component<any, any> {
   constructor(props: any) {

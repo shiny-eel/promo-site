@@ -1,17 +1,15 @@
 .contactContainer {
   display: flex;
   flex-direction: column;
-  height: fit-content;
+  height: 100vh;
   align-items: center;
-  align-content: center;
-  justify-content: center;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+  justify-content: flex-start;
 }
 .contactHeader {
+  padding-top: 3vh;
   /* position: -webkit-sticky; */
   /* position: sticky; */
-  top: 0;
+  /* top: 0; */
   width: 100%;
   height: unset;
   background: white;
@@ -30,7 +28,7 @@
 
 .contactSpread {
   flex-direction: row;
-  align-items: top;
+  align-items: flex-start;
   display: flex;
   padding: 1vw;
   width: 50%;
@@ -83,4 +81,9 @@
 
 .spacer {
   height: 20vw;
+}
+
+.easterEgg {
+  position: absolute;
+  bottom: 0;
 }

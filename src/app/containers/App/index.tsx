@@ -5,8 +5,8 @@ import { Projects, Profile, Splash, Contact } from 'app/components';
 import { Section } from 'app/shared/Section';
 // import { Projects }
 
-// const desktopImage = require('../../../assets/images/baby-lsl.png');
-// const mobileImage = require('../../../assets/images/baby-lsl-m.png');
+// const desktopImage = require('../../../assets/images/baby-lsl.jpg');
+// const mobileImage = require('../../../assets/images/baby-lsl-m.jpg');
 
 const downIcon = require('../../../assets/images/dropdown-arrow.png');
 
