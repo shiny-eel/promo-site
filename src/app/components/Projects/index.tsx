@@ -18,6 +18,10 @@ export class Projects extends React.Component<any, any> {
     super(props);
   }
 
+  renderGitHubButton = (): any => {
+    return <SocialIcon url="https://github.com/shiny-eel" style={iconStyle} target="_blank" />;
+  };
+
   renderItems = (): any => {
     return (
       <div>
@@ -41,13 +45,7 @@ export class Projects extends React.Component<any, any> {
                 <h1>Projects</h1>
                 <div className={style.stickyGithub}>
                   <h3>View all my public repositories</h3>
-                  <div>
-                    <SocialIcon
-                      url="https://github.com/shiny-eel"
-                      style={iconStyle}
-                      target="_blank"
-                    />
-                  </div>
+                  <div>{this.renderGitHubButton()}</div>
                 </div>
               </div>
             </StickyBox>
@@ -66,6 +64,7 @@ export class Projects extends React.Component<any, any> {
         <div className={style.projectsContent}>
           <div className={style.projectsHeader}>
             <h1>Projects</h1>
+            <div className={style.corner}>{this.renderGitHubButton()}</div>
           </div>
           {this.renderItems()}
         </div>
