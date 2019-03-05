@@ -10,8 +10,9 @@ body {
   display: none;
 }
 
+/* font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 body {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 14px 'Lato', Helvetica, Arial, sans-serif;
   color: rgb(61, 61, 61);
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -58,22 +59,41 @@ h6 {
 h1 {
   padding: 0.25rem 0rem 0.5rem 0rem;
   font-size: 4rem;
+  /* font-weight:  */
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+  text-align: left;
 }
 h3 {
+  /* font-weight: 400; */
   font-size: 1.5rem;
+}
+
+h4,
+h5 {
+  font-weight: 400;
+  text-align: left;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 900px), (orientation: portrait) {
   p,
-  h3 {
-    font-size: 2.5rem;
+  h3,
+  h4,
+  h5 {
+    font-size: 2.2rem;
   }
   h1,
   h2 {
-    font-size: 3.5rem;
+    font-weight: 400;
+  }
+  /* h1 {
+    font-size: 4rem;
+  } */
+  h2 {
+    font-size: 3rem;
   }
 }
 
@@ -108,11 +128,16 @@ button:hover {
   cursor: pointer;
 }
 
-.navButton button {
+button {
+  background-color: transparent;
   flex: 1;
+  border: none;
+  padding: 0;
+}
+
+.navButton button {
   padding: 0;
   border: 0;
-  background-color: transparent;
   display: flex;
   flex-direction: row;
 }
