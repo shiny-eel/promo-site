@@ -5,16 +5,23 @@ import { createBrowserHistory } from 'history';
 // import { configureStore } from 'app/store';
 import { Router } from 'react-router';
 import { App } from './app';
+import * as WebFont from 'webfontloader';
 
 // prepare store
 const history = createBrowserHistory();
 // const store = configureStore();
 
+WebFont.load({
+  google: {
+    families: ['Lato:300,400,300i,400i', 'sans-serif']
+  }
+});
+
 ReactDOM.render(
   // <Provider store={store}>
-    <Router history={history}>
-      <App />
-    </Router>,
+  <Router history={history}>
+    <App />
+  </Router>,
   // </Provider>,
   document.getElementById('root')
 );

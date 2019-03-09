@@ -6,6 +6,7 @@ import { MessengerLaunch } from './MessengerLaunch';
 import { GenreNN } from './GenreNN';
 import MediaQuery from 'react-responsive';
 import { SocialIcon } from 'react-social-icons';
+import { PartIV } from './PartIV';
 
 const iconStyle: any = {
   width: '6rem',
@@ -26,6 +27,8 @@ export class Projects extends React.Component<any, any> {
     return (
       <div>
         <MxSlate />
+        <hr />
+        <PartIV />
         <hr />
         <MessengerLaunch />
         <hr />

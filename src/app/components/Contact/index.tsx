@@ -2,9 +2,10 @@ import * as React from 'react';
 import * as style from './style.css';
 import { SocialIcon } from 'react-social-icons';
 
-const mobaIcon = require('../../../assets/images/alistar-build.jpg');
-
 const iconStyle: any = {
+  // flex: '1',
+  // width: '80%',
+  // height: '80%',
   width: '6rem',
   height: '6rem',
   margin: '1rem 1rem'
@@ -41,23 +42,13 @@ export class Contact extends React.Component<any, any> {
           <div className={style.moreInfo}>
             <h2>More</h2>
             <a
-              href="https://s3-ap-southeast-2.amazonaws.com/lushien-resources/CV+2019+FEBRUARY.pdf"
+              href="https://s3-ap-southeast-2.amazonaws.com/lushien-resources/lsl_cv.pdf"
               target="_blank"
             >
               <h3>Download my CV</h3>
             </a>
           </div>
         </div>
-        <div className={style.easterEgg}>
-          <a
-            href="https://www.mobafire.com/league-of-legends/build/support-alistar-feeding-your-team-with-milk-296695"
-            target="_blank"
-          >
-            <p>Read my Season 5 Alistar Support guide</p>
-            <img src={mobaIcon} />
-          </a>
-        </div>
-        {/* <div className={style.spacer} /> */}
       </div>
     );
   }

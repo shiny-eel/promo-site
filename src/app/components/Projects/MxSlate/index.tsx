@@ -13,7 +13,7 @@ export class MxSlate extends React.Component<any, any> {
     return (
       <Project title="MX Slate">
         <div className={style.imageHolder}>
-          <img src={logo} alt="MX Slate Screenshot" />
+          <img src={logo} style={{ width: '40%' }} alt="MX Slate Screenshot" />
         </div>
         <div className={style.text}>
           <p>

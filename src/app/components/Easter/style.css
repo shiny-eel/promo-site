@@ -1,0 +1,103 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+}
+.contactHeader {
+  padding-top: 3vh;
+  /* position: -webkit-sticky; */
+  /* position: sticky; */
+  /* top: 0; */
+  width: 100%;
+  height: unset;
+  background: white;
+  z-index: 1;
+}
+.contactHeader h1 {
+  width: 100%;
+  text-align: center;
+  /* padding: 1vw 0vw 0vw 0vw; */
+}
+
+.contactHeader h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.contactSpread {
+  flex-direction: row;
+  align-items: flex-start;
+  display: flex;
+  padding: 1vw;
+  width: 50%;
+}
+
+.contactSpread h2 {
+  padding: 1vw;
+  font-size: 2.5rem;
+  height: 25vh;
+  text-align: center;
+}
+
+/* 
+@media only screen and (min-width: 900px) {
+
+}
+ */
+@media only screen and (max-width: 900px), (orientation: portrait) {
+  .contactHeader {
+    flex-direction: column;
+    width: 90%;
+    /* width: 100%; */
+  }
+  .contactSpread {
+    width: 80%;
+  }
+}
+
+.links {
+  flex: 2;
+  justify-content: center;
+  text-align: center;
+  /* TRY FLEX ICONS */
+  flex-direction: row;
+  align-items: flex-start;
+  display: flex;
+}
+
+.pic {
+  align-self: center;
+  flex: 2;
+  /* Aligns pic */
+  text-align: center;
+}
+
+.pic img {
+  border-radius: 50%;
+  width: 17vh;
+  height: auto;
+  overflow: hidden;
+}
+
+.moreInfo {
+  flex: 1;
+}
+
+.spacer {
+  height: 20vw;
+}
+
+.easterEgg {
+  /* position: absolute; */
+  text-align: center;
+  /* bottom: 0; */
+  /* left: 0; */
+}
+
+.easterEgg img {
+  overflow: hidden;
+  width: 80%;
+  max-width: 1000px;
+}

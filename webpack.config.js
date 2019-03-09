@@ -13,6 +13,8 @@ var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 // var DirectoryNamedWebpackPlugin = require("directory-named-webpack-plugin");
 
+// var ManifestPlugin = require('webpack-manifest-plugin');
+
 // using CommonJS modules
 var Router = require('react-router').Router;
 var Route = require('react-router').Route;

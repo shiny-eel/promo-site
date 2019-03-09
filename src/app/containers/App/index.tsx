@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as style from './style.css';
 import { configureAnchors, goToAnchor } from 'react-scrollable-anchor';
-import { Projects, Profile, Splash, Contact } from 'app/components';
+import { Projects, Profile, Splash, Contact, Easter } from 'app/components';
 import { Section } from 'app/shared/Section';
 // import { Projects }
 
@@ -14,9 +14,16 @@ export enum Sections {
   Splash = 'splash',
   About = 'about',
   Projects = 'projects',
-  Contact = 'contact'
+  Contact = 'contact',
+  Easter = 'easter'
 }
-const sections = [Sections.Splash, Sections.About, Sections.Projects, Sections.Contact];
+const sections = [
+  Sections.Splash,
+  Sections.About,
+  Sections.Projects,
+  Sections.Contact,
+  Sections.Easter
+];
 
 export class App extends React.Component<any, any> {
   constructor(props: any) {
@@ -51,6 +58,9 @@ export class App extends React.Component<any, any> {
         </Section>
         <Section id={Sections.Contact}>
           <Contact />
+        </Section>
+        <Section id={Sections.Easter}>
+          <Easter />
         </Section>
         <div className={style.navButton}>
           <button onClick={(e) => this.goToNext()}>
